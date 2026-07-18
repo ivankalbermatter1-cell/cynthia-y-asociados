@@ -356,8 +356,24 @@
 </form>
 </div>
 <!-- Mapa -->
-<div class="mt-10 rounded-2xl overflow-hidden shadow-xl border border-outline-variant/30">
+<div class="mt-10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-3xl filled-icon">map</span>
+<h3 class="font-headline-md text-headline-md text-primary">Cómo llegar</h3>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-xl border border-outline-variant/30">
 <iframe allowfullscreen="" class="w-full h-[300px] md:h-[400px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Pueyrred%C3%B3n%20y%20Saavedra%2C%20Laguna%20Blanca%2C%20Formosa%2C%20Argentina&amp;output=embed" title="Ubicación del Estudio Contable Osuna &amp; Asociados en Laguna Blanca, Formosa"></iframe>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-primary-container text-on-primary px-6 py-3.5 rounded-full font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Pueyrred%C3%B3n%20y%20Saavedra%2C%20Laguna%20Blanca%2C%20Formosa" rel="noopener" target="_blank">
+<span class="material-symbols-outlined">location_on</span>
+                        Ver en Google Maps
+                    </a>
+<a class="inline-flex w-full sm:w-auto items-center justify-center gap-2 border-2 border-primary-container text-primary-container bg-surface px-6 py-3.5 rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="https://www.google.com/maps/dir/?api=1&amp;destination=Pueyrred%C3%B3n%20y%20Saavedra%2C%20Laguna%20Blanca%2C%20Formosa" rel="noopener" target="_blank">
+<span class="material-symbols-outlined">directions</span>
+                        Cómo llegar
+                    </a>
+</div>
 </div>
 </div>
 </section>
