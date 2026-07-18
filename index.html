@@ -120,6 +120,7 @@
 <div class="flex items-center gap-4">
 <img alt="Cynthia Osuna &amp; Asociados Logo" class="h-12 w-12 object-contain rounded-full" src="logo.svg"/>
 <span class="text-headline-md font-headline-lg text-primary tracking-tight hidden sm:block">Cynthia Osuna &amp; Asociados</span>
+<span class="text-[18px] font-headline-lg font-bold text-primary tracking-tight sm:hidden">Cynthia Osuna</span>
 </div>
 <div class="hidden md:flex items-center gap-8">
 <a class="text-on-surface-variant hover:text-secondary transition-all duration-300 font-label-md text-label-md" href="#servicios">Servicios</a>
@@ -130,39 +131,48 @@
                 Asesoría Gratis
             </a>
 <!-- Mobile Menu Button -->
-<button class="md:hidden text-primary p-2">
-<span class="material-symbols-outlined text-[32px]">menu</span>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú" class="md:hidden text-primary p-2" id="mobile-menu-button">
+<span class="material-symbols-outlined text-[32px]" id="mobile-menu-icon">menu</span>
 </button>
+</div>
+<!-- Mobile Menu Panel -->
+<div class="hidden md:hidden border-t border-outline-variant/30 bg-surface" id="mobile-menu">
+<div class="flex flex-col px-gutter py-4 gap-1">
+<a class="mobile-menu-link py-3 px-2 rounded-lg text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="#servicios">Servicios</a>
+<a class="mobile-menu-link py-3 px-2 rounded-lg text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="#nosotros">Nosotros</a>
+<a class="mobile-menu-link py-3 px-2 rounded-lg text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="#contacto">Contacto</a>
+<a class="mobile-menu-link mt-3 inline-flex items-center justify-center bg-secondary-fixed text-primary-container px-6 py-3 rounded-full font-label-md text-label-md shadow-sm" href="#contacto">Asesoría Gratis</a>
+</div>
 </div>
 </nav>
 <!-- Hero Section -->
-<section class="relative pt-20 pb-32 overflow-hidden">
+<section class="relative pt-12 pb-16 md:pt-20 md:pb-32 overflow-hidden">
 <div class="absolute inset-0 bg-gradient-to-br from-surface to-inverse-on-surface opacity-50 z-0"></div>
-<div class="relative z-10 max-w-container-max mx-auto px-gutter grid lg:grid-cols-2 gap-12 items-center">
-<div class="flex flex-col gap-8">
-<h1 class="font-display-lg text-display-lg md:text-display-lg text-primary text-balance leading-tight">
+<div class="relative z-10 max-w-container-max mx-auto px-gutter grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+<div class="flex flex-col gap-6 md:gap-8">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary text-balance leading-tight">
                     Ordená tus impuestos y dejá de preocuparte por ARCA
                 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant text-pretty max-w-xl">
                     Estudio contable en Laguna Blanca, Formosa. Asesoramiento claro para monotributistas, comercios y PyMEs.
                 </p>
-<div class="flex flex-wrap gap-4 pt-4">
-<a class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full font-label-md text-label-md hover:bg-[#20b858] hover:scale-105 transition-all shadow-md" href="https://wa.me/5493718615023?text=Hola%20Cynthia%2C%20quisiera%20agendar%20una%20consulta." rel="noopener" target="_blank">
+<div class="flex flex-col sm:flex-row flex-wrap gap-4 pt-4">
+<a class="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full font-label-md text-label-md hover:bg-[#20b858] hover:scale-105 transition-all shadow-md" href="https://wa.me/5493718615023?text=Hola%20Cynthia%2C%20quisiera%20agendar%20una%20consulta." rel="noopener" target="_blank">
 <span class="material-symbols-outlined">chat</span>
                         Agendá tu consulta sin cargo
                     </a>
-<a class="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-primary-container text-primary-container font-label-md text-label-md hover:bg-surface-container-high transition-colors bg-surface" href="#servicios">
+<a class="inline-flex w-full sm:w-auto items-center justify-center px-8 py-4 rounded-full border-2 border-primary-container text-primary-container font-label-md text-label-md hover:bg-surface-container-high transition-colors bg-surface" href="#servicios">
                         Ver servicios
                     </a>
 </div>
 </div>
-<div class="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+<div class="relative h-[260px] sm:h-[360px] lg:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
 <img class="object-cover w-full h-full" data-alt="A bright, modern office desk featuring a clean laptop, neat stacks of financial documents, a modern calculator, and a sleek cup of coffee. The lighting is soft and natural, emphasizing a professional, trustworthy, and organized accounting environment in a light-mode aesthetic with subtle golden and deep petrol blue accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvC5HwwLBNUJBP_IMcdZ-GHPJliaNxH3JpMQZeDF-iKqspog9WaDL1YrAAy48RcQwqfVdGDqNM0GR8qw2bYJ_ncyYhBBjQaGeVggjQHa6HlOo2drBjs_LzWYIv-HBeMgvzx31Re5fEcK1Z0Wh462NQPvIVGobUz_hyiBRExRUIHcGtX05PxdwFoFIpHMdzo0FOPxAeEf_LH0arTMiUzZAPlnHCiGoyxfpvjksEYSEmGc4A-FupVouqAHCZBEFul_hqlirwM0o8aDQ"/>
 </div>
 </div>
 </section>
 <!-- Trust Bar -->
-<section class="bg-primary-container py-12">
+<section class="bg-primary-container py-8 md:py-12">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 <div class="flex flex-col items-center text-center gap-3">
@@ -185,9 +195,9 @@
 </div>
 </section>
 <!-- Services -->
-<section class="py-24 bg-surface-container-lowest" id="servicios">
+<section class="py-16 md:py-24 bg-surface-container-lowest" id="servicios">
 <div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="text-center max-w-2xl mx-auto mb-10 md:mb-16">
 <h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-primary mb-4">Nuestros Servicios</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant">Soluciones contables a medida para tu negocio y para vos.</p>
 </div>
@@ -232,9 +242,9 @@
 </div>
 </section>
 <!-- About Cynthia -->
-<section class="py-24 bg-surface" id="nosotros">
+<section class="py-16 md:py-24 bg-surface" id="nosotros">
 <div class="max-w-container-max mx-auto px-gutter">
-<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 <div class="relative rounded-2xl overflow-hidden shadow-xl">
 <img alt="C.P. Osuna Cynthia" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ13SX1itAlO8NWm9JjnkwifFAseAwU1ADNeWl4zO6-73mjzRNNRuF_jK6_yfu77npLOKsWt9c-ZQdRHsHO3OFEmFJiFLINraDeCmAHT4wRjV2h3nKBnnXwNN5vuP7z1QY3X7tzdx69QXkqXM6CBuVVSd2Z3BYkBrJl_C1buWBQhd9rmwexxfBUxdllNQqlrs5kOS0lQ_xC5WyrN8IP-9cfXHR5ptz3xer5DjI3uPC04WkP4ajqfue6VSDX73_kFz037ME5MMi3rc"/>
 <div class="absolute bottom-0 left-0 right-0 bg-primary/90 backdrop-blur-sm p-6 text-on-primary">
@@ -269,14 +279,14 @@
 </div>
 </section>
 <!-- Contact -->
-<section class="py-24 bg-surface-container-lowest" id="contacto">
+<section class="py-16 md:py-24 bg-surface-container-lowest" id="contacto">
 <div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="text-center max-w-2xl mx-auto mb-10 md:mb-16">
 <h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-primary mb-4">Contacto</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant">Escribinos y coordinemos tu asesoría sin cargo.</p>
 </div>
 <div class="grid lg:grid-cols-2 gap-10 items-stretch">
-<div class="bg-primary-container rounded-2xl p-10 flex flex-col gap-6 text-on-primary shadow-xl">
+<div class="bg-primary-container rounded-2xl p-6 md:p-10 flex flex-col gap-6 text-on-primary shadow-xl">
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-secondary-fixed text-3xl filled-icon">call</span>
 <a class="font-body-lg text-body-lg hover:text-secondary-fixed transition-colors" href="tel:+5493718615023">3718-615023</a>
@@ -298,7 +308,7 @@
                         Escribinos por WhatsApp
                     </a>
 </div>
-<form class="glass-card rounded-2xl p-10 flex flex-col gap-5 border border-outline-variant/30" id="contact-form">
+<form class="glass-card rounded-2xl p-6 md:p-10 flex flex-col gap-5 border border-outline-variant/30" id="contact-form">
 <div class="flex flex-col gap-2">
 <label class="font-label-md text-label-md text-primary" for="contact-name">Nombre</label>
 <input class="rounded-lg border border-outline-variant bg-surface px-4 py-3 font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="contact-name" name="name" placeholder="Tu nombre" type="text"/>
@@ -319,7 +329,7 @@
 </div>
 </section>
 <!-- BottomNavBar (WhatsApp FAB) -->
-<div class="fixed bottom-8 right-8 z-[100] flex pointer-events-none [&amp;&gt;*]:pointer-events-auto">
+<div class="fixed bottom-5 right-5 md:bottom-8 md:right-8 z-[100] flex pointer-events-none [&amp;&gt;*]:pointer-events-auto">
 <a class="flex items-center justify-center bg-[#25D366] text-white rounded-full p-4 shadow-xl hover:scale-110 hover:brightness-110 transition-transform duration-300 group" href="https://wa.me/5493718615023?text=Hola%20Cynthia%2C%20quisiera%20hacer%20una%20consulta." rel="noopener" target="_blank">
 <span class="material-symbols-outlined text-3xl">chat</span>
 <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap font-label-md pl-0 group-hover:pl-3">WhatsApp</span>
@@ -343,6 +353,24 @@
 </div>
 </footer>
 <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const menuPanel = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('mobile-menu-icon');
+        menuButton.addEventListener('click', function () {
+            const isOpen = !menuPanel.classList.toggle('hidden');
+            menuIcon.textContent = isOpen ? 'close' : 'menu';
+            menuButton.setAttribute('aria-expanded', String(isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+        });
+        document.querySelectorAll('.mobile-menu-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                menuPanel.classList.add('hidden');
+                menuIcon.textContent = 'menu';
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.setAttribute('aria-label', 'Abrir menú');
+            });
+        });
+
         document.getElementById('contact-form')?.addEventListener('submit', function (e) {
             e.preventDefault();
             const name = document.getElementById('contact-name').value;
