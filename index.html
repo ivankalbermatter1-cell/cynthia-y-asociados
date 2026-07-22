@@ -148,11 +148,12 @@
 <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
 <div class="flex items-center gap-4">
 <img alt="Cynthia Osuna &amp; Asociados Logo" class="h-12 w-12 object-contain rounded-full" src="logo.svg"/>
-<span class="text-headline-md font-headline-lg text-primary tracking-tight hidden sm:block">Cynthia Osuna &amp; Asociados</span>
-<span class="text-[18px] font-headline-lg font-bold text-primary tracking-tight sm:hidden">Cynthia Osuna</span>
+<span class="text-[20px] lg:text-headline-md font-headline-lg font-bold text-primary tracking-tight leading-tight hidden sm:block">Estudio Contable Osuna &amp; Asociados</span>
+<span class="text-[16px] font-headline-lg font-bold text-primary tracking-tight leading-tight sm:hidden">Estudio Contable Osuna</span>
 </div>
 <div class="hidden md:flex items-center gap-8">
 <a class="text-on-surface-variant hover:text-secondary transition-all duration-300 font-label-md text-label-md" href="#servicios">Servicios</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all duration-300 font-label-md text-label-md" href="#novedades">Novedades</a>
 <a class="text-on-surface-variant hover:text-secondary transition-all duration-300 font-label-md text-label-md" href="#nosotros">Nosotros</a>
 <a class="text-on-surface-variant hover:text-secondary transition-all duration-300 font-label-md text-label-md" href="#contacto">Contacto</a>
 </div>
@@ -168,6 +169,7 @@
 <div class="hidden md:hidden border-t border-outline-variant/30 bg-surface" id="mobile-menu">
 <div class="flex flex-col px-gutter py-4 gap-1">
 <a class="mobile-menu-link py-3 px-2 rounded-lg text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="#servicios">Servicios</a>
+<a class="mobile-menu-link py-3 px-2 rounded-lg text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="#novedades">Novedades</a>
 <a class="mobile-menu-link py-3 px-2 rounded-lg text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="#nosotros">Nosotros</a>
 <a class="mobile-menu-link py-3 px-2 rounded-lg text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="#contacto">Contacto</a>
 <a class="mobile-menu-link mt-3 inline-flex items-center justify-center bg-secondary-fixed text-primary-container px-6 py-3 rounded-full font-label-md text-label-md shadow-sm" href="#contacto">Consultanos</a>
@@ -221,6 +223,46 @@
 <span class="font-label-md text-label-md text-on-primary">Respuesta el mismo día</span>
 </div>
 </div>
+</div>
+</section>
+<!-- Novedades (Carrusel) -->
+<section class="py-16 md:py-24 bg-surface" id="novedades">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-10 md:mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Novedades impositivas</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Últimas noticias de ARCA (ex AFIP) que pueden afectar tu situación fiscal. Tocá cada novedad para leer más.</p>
+</div>
+<div aria-label="Carrusel de novedades impositivas" aria-roledescription="carrusel" class="relative group" id="news-carousel" role="region">
+<div class="overflow-hidden rounded-2xl shadow-xl border border-outline-variant/30">
+<div class="flex transition-transform duration-500 ease-out" id="news-track">
+<a class="block min-w-full" href="https://www.arca.gob.ar/monotributo/categorias.asp" rel="noopener" target="_blank">
+<img alt="Recategorización: nuevos valores de categorías de monotributo" class="block w-full h-auto" src="img/noticias/recategorizacion.jpg"/>
+</a>
+<a class="block min-w-full" href="https://servicioscf.afip.gob.ar/publico/sitio/contenido/novedad/ver.aspx?id=5823" rel="noopener" target="_blank">
+<img alt="Ganancias: nueva prórroga para la presentación de la declaración jurada" class="block w-full h-auto" src="img/noticias/ganancias-prorroga.jpg"/>
+</a>
+<a class="block min-w-full" href="https://servicioscf.afip.gob.ar/publico/sitio/contenido/novedad/ver.aspx?id=5797" rel="noopener" target="_blank">
+<img alt="Mi Argentina: liquidación digital para empleados del sector privado" class="block w-full h-auto" src="img/noticias/miargentina.jpg"/>
+</a>
+<a class="block min-w-full" href="https://servicioscf.afip.gob.ar/publico/sitio/contenido/novedad/ver.aspx?id=5817" rel="noopener" target="_blank">
+<img alt="Plan de pagos: regularización de deudas vencidas" class="block w-full h-auto" src="img/noticias/plan-pagos.jpg"/>
+</a>
+<a class="block min-w-full" href="https://www.youtube.com/watch?v=SL4HZU1O2Rc" rel="noopener" target="_blank">
+<img alt="Monotributo: ¿qué es la recategorización?" class="block w-full h-auto" src="img/noticias/que-es-recategorizacion.jpg"/>
+</a>
+</div>
+</div>
+<!-- Flechas -->
+<button aria-label="Novedad anterior" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/70 hover:bg-primary text-on-primary shadow-lg transition-all opacity-0 group-hover:opacity-100 focus:opacity-100" id="news-prev" type="button">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button aria-label="Novedad siguiente" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/70 hover:bg-primary text-on-primary shadow-lg transition-all opacity-0 group-hover:opacity-100 focus:opacity-100" id="news-next" type="button">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+<!-- Indicadores -->
+<div class="flex justify-center gap-2 mt-6" id="news-dots"></div>
+</div>
+<p class="text-center font-body-md text-sm text-on-surface-variant/70 mt-4">Fuente: ARCA (ex AFIP) · <a class="hover:text-secondary underline" href="https://www.afip.gob.ar/landing/default.asp" rel="noopener" target="_blank">afip.gob.ar</a></p>
 </div>
 </section>
 <!-- Services -->
@@ -402,6 +444,65 @@
 </div>
 </footer>
 <script>
+        // ===== Carrusel de novedades =====
+        (function () {
+            const carousel = document.getElementById('news-carousel');
+            if (!carousel) return;
+            const track = document.getElementById('news-track');
+            const slides = Array.from(track.children);
+            const dotsContainer = document.getElementById('news-dots');
+            const prevBtn = document.getElementById('news-prev');
+            const nextBtn = document.getElementById('news-next');
+            let index = 0;
+            let timer = null;
+            const AUTOPLAY_MS = 5000;
+
+            // Crear indicadores (puntos)
+            slides.forEach(function (_, i) {
+                const dot = document.createElement('button');
+                dot.type = 'button';
+                dot.setAttribute('aria-label', 'Ir a la novedad ' + (i + 1));
+                dot.className = 'w-2.5 h-2.5 rounded-full transition-all';
+                dot.addEventListener('click', function () { goTo(i); resetAutoplay(); });
+                dotsContainer.appendChild(dot);
+            });
+            const dots = Array.from(dotsContainer.children);
+
+            function update() {
+                track.style.transform = 'translateX(-' + (index * 100) + '%)';
+                dots.forEach(function (d, i) {
+                    d.className = 'w-2.5 h-2.5 rounded-full transition-all ' +
+                        (i === index ? 'bg-secondary w-6' : 'bg-outline-variant hover:bg-outline');
+                });
+            }
+            function goTo(i) { index = (i + slides.length) % slides.length; update(); }
+            function next() { goTo(index + 1); }
+            function prev() { goTo(index - 1); }
+
+            function startAutoplay() { timer = setInterval(next, AUTOPLAY_MS); }
+            function stopAutoplay() { if (timer) { clearInterval(timer); timer = null; } }
+            function resetAutoplay() { stopAutoplay(); startAutoplay(); }
+
+            nextBtn.addEventListener('click', function () { next(); resetAutoplay(); });
+            prevBtn.addEventListener('click', function () { prev(); resetAutoplay(); });
+
+            // Pausar al pasar el mouse
+            carousel.addEventListener('mouseenter', stopAutoplay);
+            carousel.addEventListener('mouseleave', startAutoplay);
+
+            // Deslizar con el dedo (touch)
+            let startX = 0, deltaX = 0, dragging = false;
+            track.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; dragging = true; stopAutoplay(); }, { passive: true });
+            track.addEventListener('touchmove', function (e) { if (dragging) deltaX = e.touches[0].clientX - startX; }, { passive: true });
+            track.addEventListener('touchend', function () {
+                if (dragging && Math.abs(deltaX) > 40) { deltaX < 0 ? next() : prev(); }
+                dragging = false; deltaX = 0; startAutoplay();
+            });
+
+            update();
+            startAutoplay();
+        })();
+
         const menuButton = document.getElementById('mobile-menu-button');
         const menuPanel = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('mobile-menu-icon');
